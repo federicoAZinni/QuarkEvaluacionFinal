@@ -1,0 +1,10 @@
+C:\Users\MI PC\Desktop\QuarkEvaluacionFinal\EvaluacionFinal-FedericoZinni\EvaluacionFinal-FedericoZinni\bin\Debug\EvaluacionFinal-FedericoZinni.exe.config
+C:\Users\MI PC\Desktop\QuarkEvaluacionFinal\EvaluacionFinal-FedericoZinni\EvaluacionFinal-FedericoZinni\bin\Debug\EvaluacionFinal-FedericoZinni.exe
+C:\Users\MI PC\Desktop\QuarkEvaluacionFinal\EvaluacionFinal-FedericoZinni\EvaluacionFinal-FedericoZinni\bin\Debug\EvaluacionFinal-FedericoZinni.pdb
+C:\Users\MI PC\Desktop\QuarkEvaluacionFinal\EvaluacionFinal-FedericoZinni\EvaluacionFinal-FedericoZinni\obj\Debug\EvaluacionFinal-FedericoZinni.csproj.AssemblyReference.cache
+C:\Users\MI PC\Desktop\QuarkEvaluacionFinal\EvaluacionFinal-FedericoZinni\EvaluacionFinal-FedericoZinni\obj\Debug\EvaluacionFinal_FedericoZinni.Cotizacion.resources
+C:\Users\MI PC\Desktop\QuarkEvaluacionFinal\EvaluacionFinal-FedericoZinni\EvaluacionFinal-FedericoZinni\obj\Debug\EvaluacionFinal_FedericoZinni.Properties.Resources.resources
+C:\Users\MI PC\Desktop\QuarkEvaluacionFinal\EvaluacionFinal-FedericoZinni\EvaluacionFinal-FedericoZinni\obj\Debug\EvaluacionFinal-FedericoZinni.csproj.GenerateResource.cache
+C:\Users\MI PC\Desktop\QuarkEvaluacionFinal\EvaluacionFinal-FedericoZinni\EvaluacionFinal-FedericoZinni\obj\Debug\EvaluacionFinal-FedericoZinni.csproj.CoreCompileInputs.cache
+C:\Users\MI PC\Desktop\QuarkEvaluacionFinal\EvaluacionFinal-FedericoZinni\EvaluacionFinal-FedericoZinni\obj\Debug\EvaluacionFinal-FedericoZinni.exe
+C:\Users\MI PC\Desktop\QuarkEvaluacionFinal\EvaluacionFinal-FedericoZinni\EvaluacionFinal-FedericoZinni\obj\Debug\EvaluacionFinal-FedericoZinni.pdb

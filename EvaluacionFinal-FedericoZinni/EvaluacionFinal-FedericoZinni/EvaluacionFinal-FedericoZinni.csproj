@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CC3686BB-7346-4D91-8F07-D046718A918C}</ProjectGuid>
+    <ProjectGuid>{7D10D602-F2F2-4106-8190-4B5B065228C7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>EvaluacionFinal_FedericoZinni</RootNamespace>
     <AssemblyName>EvaluacionFinal-FedericoZinni</AssemblyName>
@@ -46,14 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Cotizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Cotizacion.Designer.cs">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cotizacion.resx">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
