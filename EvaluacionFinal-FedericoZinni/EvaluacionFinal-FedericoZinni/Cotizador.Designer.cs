@@ -1,7 +1,7 @@
 ﻿
 namespace EvaluacionFinal_FedericoZinni
 {
-    partial class Cotizacion
+    partial class Cotizador
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -37,7 +37,7 @@ namespace EvaluacionFinal_FedericoZinni
             this.historialCotizaciones = new System.Windows.Forms.LinkLabel();
             this.Prenda = new System.Windows.Forms.Panel();
             this.chupin = new System.Windows.Forms.CheckBox();
-            this.mangaLarga = new System.Windows.Forms.CheckBox();
+            this.cuelloMao = new System.Windows.Forms.CheckBox();
             this.mangoCorta = new System.Windows.Forms.CheckBox();
             this.camisa = new System.Windows.Forms.RadioButton();
             this.pantalon = new System.Windows.Forms.RadioButton();
@@ -49,12 +49,12 @@ namespace EvaluacionFinal_FedericoZinni
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.precioUni = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.cantidadPrendas = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cotizarButton = new System.Windows.Forms.Button();
             this.resultCotizacion = new System.Windows.Forms.Label();
+            this.precioUni = new System.Windows.Forms.TextBox();
             this.Prenda.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -135,7 +135,7 @@ namespace EvaluacionFinal_FedericoZinni
             this.Prenda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Prenda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Prenda.Controls.Add(this.chupin);
-            this.Prenda.Controls.Add(this.mangaLarga);
+            this.Prenda.Controls.Add(this.cuelloMao);
             this.Prenda.Controls.Add(this.mangoCorta);
             this.Prenda.Controls.Add(this.camisa);
             this.Prenda.Controls.Add(this.pantalon);
@@ -158,18 +158,18 @@ namespace EvaluacionFinal_FedericoZinni
             this.chupin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chupin.UseVisualStyleBackColor = true;
             // 
-            // mangaLarga
+            // cuelloMao
             // 
-            this.mangaLarga.AutoSize = true;
-            this.mangaLarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mangaLarga.ForeColor = System.Drawing.Color.Black;
-            this.mangaLarga.Location = new System.Drawing.Point(479, 39);
-            this.mangaLarga.Name = "mangaLarga";
-            this.mangaLarga.Size = new System.Drawing.Size(111, 21);
-            this.mangaLarga.TabIndex = 3;
-            this.mangaLarga.Text = "Manga Larga";
-            this.mangaLarga.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.mangaLarga.UseVisualStyleBackColor = true;
+            this.cuelloMao.AutoSize = true;
+            this.cuelloMao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cuelloMao.ForeColor = System.Drawing.Color.Black;
+            this.cuelloMao.Location = new System.Drawing.Point(479, 39);
+            this.cuelloMao.Name = "cuelloMao";
+            this.cuelloMao.Size = new System.Drawing.Size(97, 21);
+            this.cuelloMao.TabIndex = 3;
+            this.cuelloMao.Text = "Cuello Mao";
+            this.cuelloMao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cuelloMao.UseVisualStyleBackColor = true;
             // 
             // mangoCorta
             // 
@@ -195,7 +195,6 @@ namespace EvaluacionFinal_FedericoZinni
             this.camisa.TabStop = true;
             this.camisa.Text = "Camisa";
             this.camisa.UseVisualStyleBackColor = true;
-            this.camisa.CheckedChanged += new System.EventHandler(this.camisa_CheckedChanged);
             // 
             // pantalon
             // 
@@ -208,7 +207,6 @@ namespace EvaluacionFinal_FedericoZinni
             this.pantalon.TabStop = true;
             this.pantalon.Text = "Pantalón";
             this.pantalon.UseVisualStyleBackColor = true;
-            this.pantalon.CheckedChanged += new System.EventHandler(this.pantalon_CheckedChanged);
             // 
             // label1
             // 
@@ -293,25 +291,22 @@ namespace EvaluacionFinal_FedericoZinni
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.precioUni);
             this.panel4.Controls.Add(this.cantidadPrendas);
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.precioUni);
+            this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(303, 447);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(371, 61);
             this.panel4.TabIndex = 14;
             // 
-            // precioUni
+            // cantidadPrendas
             // 
-            this.precioUni.AutoSize = true;
-            this.precioUni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precioUni.ForeColor = System.Drawing.Color.Black;
-            this.precioUni.Location = new System.Drawing.Point(3, 21);
-            this.precioUni.Name = "precioUni";
-            this.precioUni.Size = new System.Drawing.Size(101, 17);
-            this.precioUni.TabIndex = 0;
-            this.precioUni.Text = "Precio Unitario";
+            this.cantidadPrendas.Location = new System.Drawing.Point(285, 19);
+            this.cantidadPrendas.Multiline = true;
+            this.cantidadPrendas.Name = "cantidadPrendas";
+            this.cantidadPrendas.Size = new System.Drawing.Size(71, 21);
+            this.cantidadPrendas.TabIndex = 2;
             // 
             // label2
             // 
@@ -324,24 +319,16 @@ namespace EvaluacionFinal_FedericoZinni
             this.label2.TabIndex = 1;
             this.label2.Text = "Cantidad";
             // 
-            // cantidadPrendas
-            // 
-            this.cantidadPrendas.Location = new System.Drawing.Point(285, 19);
-            this.cantidadPrendas.Multiline = true;
-            this.cantidadPrendas.Name = "cantidadPrendas";
-            this.cantidadPrendas.Size = new System.Drawing.Size(71, 21);
-            this.cantidadPrendas.TabIndex = 2;
-            // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(110, 18);
+            this.label3.Location = new System.Drawing.Point(3, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 22);
-            this.label3.TabIndex = 3;
+            this.label3.Size = new System.Drawing.Size(101, 17);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Precio Unitario";
             // 
             // cotizarButton
             // 
@@ -372,7 +359,14 @@ namespace EvaluacionFinal_FedericoZinni
             this.resultCotizacion.Text = "$_______________";
             this.resultCotizacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Cotizacion
+            // precioUni
+            // 
+            this.precioUni.Location = new System.Drawing.Point(110, 19);
+            this.precioUni.Name = "precioUni";
+            this.precioUni.Size = new System.Drawing.Size(92, 20);
+            this.precioUni.TabIndex = 3;
+            // 
+            // Cotizador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -391,7 +385,7 @@ namespace EvaluacionFinal_FedericoZinni
             this.Controls.Add(this.title);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
-            this.Name = "Cotizacion";
+            this.Name = "Cotizador";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Prenda.ResumeLayout(false);
@@ -420,7 +414,7 @@ namespace EvaluacionFinal_FedericoZinni
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.CheckBox chupin;
-        private System.Windows.Forms.CheckBox mangaLarga;
+        private System.Windows.Forms.CheckBox cuelloMao;
         private System.Windows.Forms.CheckBox mangoCorta;
         private System.Windows.Forms.RadioButton camisa;
         private System.Windows.Forms.RadioButton pantalon;
@@ -430,12 +424,12 @@ namespace EvaluacionFinal_FedericoZinni
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label precioUni;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox cantidadPrendas;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button cotizarButton;
         private System.Windows.Forms.Label resultCotizacion;
+        private System.Windows.Forms.TextBox precioUni;
     }
 }
 
