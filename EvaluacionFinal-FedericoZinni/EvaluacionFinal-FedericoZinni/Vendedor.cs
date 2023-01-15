@@ -23,17 +23,17 @@ namespace EvaluacionFinal_FedericoZinni
         }
 
 
-        public float Cotizar(bool camisa,bool pantalon,bool mangaCorta,bool cuelloMao,bool premium,bool chupin, float precioUnit, int cant, ref int cantStock)
+        public float Cotizar(bool camisa , bool pantalon,bool mangaCorta,bool cuelloMao,bool premium,bool chupin, float precioUnit, int cant, ref int cantStock)
         {
             float precioCoti = precioUnit;
 
             if (camisa && pantalon)
             {
-                //Error elegir uno
+                PopUp error = new PopUp("No se puede elegir pantalon y camisa al mismo tiempo");
             }
             else if (camisa)
             {
-                if (chupin) { /* error no se puede elegir camisa tipo chupin*/ return 0; }
+                if (chupin) {PopUp error = new PopUp("Error no se puede elegir camisa tipo chupin"); return 0; }
 
                 Camisa cam = new Camisa();
                 cam.cuello = cuelloMao ? Cuello.cuelloMao : Cuello.cuelloComun;
@@ -41,7 +41,7 @@ namespace EvaluacionFinal_FedericoZinni
 
                 cam = tienda.BuscadorPrenda(cam);
 
-                if (cant > cam.cantStock) { /*Error no hay tal cantidad*/ return 0; }
+                if (cant > cam.cantStock) {PopUp error = new PopUp("Error no hay tal cantidad"); return 0; }
 
                 cantStock = cam.cantStock;
 
@@ -57,14 +57,14 @@ namespace EvaluacionFinal_FedericoZinni
             }
             else //pantalon
             {
-                if (mangaCorta || cuelloMao) { /* error no se puede elegir pantalon tipo manga corta o cuello moa*/ return 0; }
+                if (mangaCorta || cuelloMao) {PopUp error = new PopUp("Error no se puede elegir pantalon tipo manga corta o cuello moa"); return 0; }
 
                 Pantalon pant = new Pantalon();
                 pant.tipoPantalon = chupin ? TipoPantalon.Chupin : TipoPantalon.Comun;
 
                 pant = tienda.BuscadorPrenda(pant);
 
-                if (cant > pant.cantStock) { /*Error no hay tal cantidad*/ return 0; }
+                if (cant > pant.cantStock) { PopUp error = new PopUp("Error no hay tal cantidad"); return 0; }
 
                 cantStock = pant.cantStock;
 

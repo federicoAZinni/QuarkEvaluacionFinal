@@ -34,11 +34,12 @@ namespace EvaluacionFinal_FedericoZinni
             // 
             // ErrorPopUp
             // 
-            this.ErrorPopUp.AutoSize = true;
-            this.ErrorPopUp.Location = new System.Drawing.Point(167, 97);
+            this.ErrorPopUp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ErrorPopUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ErrorPopUp.Location = new System.Drawing.Point(12, 9);
             this.ErrorPopUp.Name = "ErrorPopUp";
             this.ErrorPopUp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ErrorPopUp.Size = new System.Drawing.Size(72, 13);
+            this.ErrorPopUp.Size = new System.Drawing.Size(410, 193);
             this.ErrorPopUp.TabIndex = 0;
             this.ErrorPopUp.Text = "MessageError";
             this.ErrorPopUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -55,7 +56,6 @@ namespace EvaluacionFinal_FedericoZinni
             this.Text = "PopUp";
             this.Load += new System.EventHandler(this.PopUp_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

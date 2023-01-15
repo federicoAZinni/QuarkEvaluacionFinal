@@ -53,8 +53,29 @@ namespace EvaluacionFinal_FedericoZinni
 
         private void cotizarButton_Click(object sender, EventArgs e)
         {
+            #region ErrorCatcher
+            try
+            {
+                float _precioUni = float.Parse(precioUni.Text);
+            }
+            catch (System.FormatException)
+            {
+                PopUp error = new PopUp("El campo de Precio por unidad solo acepta numeros");
+                return;
+            }
+            try
+            {
+                int _cantidadPrendas = int.Parse(cantidadPrendas.Text);
+            }
+            catch (System.FormatException)
+            {
+                PopUp error = new PopUp("El campo de Cantidad de unidades solo acepta numeros");
+                return;
+            }
+            #endregion
+
             int cantStocks = 0;
-            resultCotizacion.Text = vendedor.Cotizar(camisa.Checked, pantalon.Checked, mangoCorta.Checked, cuelloMao.Checked, premium.Checked, chupin.Checked,float.Parse(precioUni.Text), int.Parse(cantidadPrendas.Text), ref cantStocks).ToString();
+            resultCotizacion.Text = vendedor.Cotizar(camisa.Checked, pantalon.Checked, mangoCorta.Checked, cuelloMao.Checked, premium.Checked, chupin.Checked, float.Parse(precioUni.Text), int.Parse(cantidadPrendas.Text), ref cantStocks).ToString();
             cantStock.Text = cantStocks.ToString();
         }
     }

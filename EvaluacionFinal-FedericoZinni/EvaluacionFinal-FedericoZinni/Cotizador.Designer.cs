@@ -49,12 +49,12 @@ namespace EvaluacionFinal_FedericoZinni
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.precioUni = new System.Windows.Forms.TextBox();
             this.cantidadPrendas = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cotizarButton = new System.Windows.Forms.Button();
             this.resultCotizacion = new System.Windows.Forms.Label();
-            this.precioUni = new System.Windows.Forms.TextBox();
             this.Prenda.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -186,6 +186,7 @@ namespace EvaluacionFinal_FedericoZinni
             // 
             // camisa
             // 
+            this.camisa.Checked = true;
             this.camisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.camisa.ForeColor = System.Drawing.Color.Black;
             this.camisa.Location = new System.Drawing.Point(36, 39);
@@ -204,7 +205,6 @@ namespace EvaluacionFinal_FedericoZinni
             this.pantalon.Name = "pantalon";
             this.pantalon.Size = new System.Drawing.Size(84, 33);
             this.pantalon.TabIndex = 1;
-            this.pantalon.TabStop = true;
             this.pantalon.Text = "Pantalón";
             this.pantalon.UseVisualStyleBackColor = true;
             // 
@@ -246,6 +246,7 @@ namespace EvaluacionFinal_FedericoZinni
             // 
             this.standar.AutoSize = true;
             this.standar.BackColor = System.Drawing.Color.Transparent;
+            this.standar.Checked = true;
             this.standar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.standar.ForeColor = System.Drawing.Color.Black;
             this.standar.Location = new System.Drawing.Point(23, 18);
@@ -266,7 +267,6 @@ namespace EvaluacionFinal_FedericoZinni
             this.premium.Name = "premium";
             this.premium.Size = new System.Drawing.Size(81, 21);
             this.premium.TabIndex = 11;
-            this.premium.TabStop = true;
             this.premium.Text = "Premium";
             this.premium.UseVisualStyleBackColor = false;
             // 
@@ -299,6 +299,13 @@ namespace EvaluacionFinal_FedericoZinni
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(371, 61);
             this.panel4.TabIndex = 14;
+            // 
+            // precioUni
+            // 
+            this.precioUni.Location = new System.Drawing.Point(110, 19);
+            this.precioUni.Name = "precioUni";
+            this.precioUni.Size = new System.Drawing.Size(92, 20);
+            this.precioUni.TabIndex = 3;
             // 
             // cantidadPrendas
             // 
@@ -358,13 +365,6 @@ namespace EvaluacionFinal_FedericoZinni
             this.resultCotizacion.TabIndex = 16;
             this.resultCotizacion.Text = "$_______________";
             this.resultCotizacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // precioUni
-            // 
-            this.precioUni.Location = new System.Drawing.Point(110, 19);
-            this.precioUni.Name = "precioUni";
-            this.precioUni.Size = new System.Drawing.Size(92, 20);
-            this.precioUni.TabIndex = 3;
             // 
             // Cotizador
             // 

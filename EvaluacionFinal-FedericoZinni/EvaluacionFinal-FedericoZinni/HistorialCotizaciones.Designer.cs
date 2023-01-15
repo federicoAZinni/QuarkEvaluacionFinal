@@ -35,7 +35,7 @@ namespace EvaluacionFinal_FedericoZinni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(255, 450);
+            this.ClientSize = new System.Drawing.Size(402, 450);
             this.Name = "HistorialCotizaciones";
             this.Text = "HistorialCotizaciones";
             this.Load += new System.EventHandler(this.HistorialCotizaciones_Load);

@@ -12,14 +12,17 @@ namespace EvaluacionFinal_FedericoZinni
 {
     public partial class PopUp : Form
     {
-        public PopUp()
+        string message;
+        public PopUp(string _message)
         {
             InitializeComponent();
+            message = _message;
+            this.ShowDialog();
         }
 
         private void PopUp_Load(object sender, EventArgs e)
         {
-
+            ErrorPopUp.Text = message;
         }
     }
 }
