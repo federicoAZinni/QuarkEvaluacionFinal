@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EvaluacionFinal_FedericoZinni
 {
-    class Pantalon:Prenda
+     class Pantalon:Prenda
     {
         public TipoPantalon tipoPantalon;
     }

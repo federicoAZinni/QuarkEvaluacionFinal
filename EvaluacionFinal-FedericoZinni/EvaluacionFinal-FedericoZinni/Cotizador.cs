@@ -48,7 +48,7 @@ namespace EvaluacionFinal_FedericoZinni
 
         private void historialCotizaciones_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            vendedor.MostrarHistorialCotizaciones();
         }
 
         private void cotizarButton_Click(object sender, EventArgs e)

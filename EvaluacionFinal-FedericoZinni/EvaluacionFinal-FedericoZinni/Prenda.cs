@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EvaluacionFinal_FedericoZinni
 {
-    abstract class Prenda
+     public abstract class Prenda
     {
         public bool premium;
         public int precioUni;

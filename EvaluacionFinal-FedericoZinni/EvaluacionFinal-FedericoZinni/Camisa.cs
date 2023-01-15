@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EvaluacionFinal_FedericoZinni
 {
-    class Camisa:Prenda
+     class Camisa:Prenda
     {
         public Manga manga;
         public Cuello cuello;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EvaluacionFinal_FedericoZinni
 {
-    class Vendedor
+       class Vendedor
     {
         public string nombre;
         public string apellido;
@@ -33,6 +33,8 @@ namespace EvaluacionFinal_FedericoZinni
             }
             else if (camisa)
             {
+                if (chupin) { /* error no se puede elegir camisa tipo chupin*/ return 0; }
+
                 Camisa cam = new Camisa();
                 cam.cuello = cuelloMao ? Cuello.cuelloMao : Cuello.cuelloComun;
                 cam.manga = mangaCorta ? Manga.mangaCorta : Manga.mangaLarga;
@@ -55,6 +57,8 @@ namespace EvaluacionFinal_FedericoZinni
             }
             else //pantalon
             {
+                if (mangaCorta || cuelloMao) { /* error no se puede elegir pantalon tipo manga corta o cuello moa*/ return 0; }
+
                 Pantalon pant = new Pantalon();
                 pant.tipoPantalon = chupin ? TipoPantalon.Chupin : TipoPantalon.Comun;
 
@@ -80,7 +84,8 @@ namespace EvaluacionFinal_FedericoZinni
 
         public void MostrarHistorialCotizaciones()
         {
-
+            HistorialCotizaciones histCoti = new HistorialCotizaciones(this);
+            histCoti.ShowDialog();
         }
 
     }

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace EvaluacionFinal_FedericoZinni
 {
-    class Cotizacion
+    public struct Cotizacion
     {
-        int numeroDeIdentificacion;
-        string fechaYhora;
-        string vendedorCode;
-        Prenda prenda;
-        int cantPrendas;
-        float resultado;
+        public int numeroDeIdentificacion;
+        public string fechaYhora;
+        public string vendedorCode;
+        public Prenda prenda;
+        public int cantPrendas;
+        public float resultado;
 
         public Cotizacion(int _numeroDeIdentificacion, string _fechaYhora, string _vendedorCode, Prenda _prenda, int _cantPrendas, float _resultado)
         {
