@@ -28,14 +28,14 @@ namespace EvaluacionFinal_FedericoZinni
 
             foreach (Cotizacion cotizacion in ven.histCotizaciones)
             {
-                lb.Text += "-------------------------------" +
+                lb.Text += "--------------------------------------------------------------" +
                     "\r\nN° de identificacion : " + cotizacion.numeroDeIdentificacion.ToString() +
                     "\r\nFecha y hora : " + cotizacion.fechaYhora +
                     "\r\nCódigo de vendedor : " + cotizacion.vendedorCode +
-                    "\r\nPrenda Cotizada : " + cotizacion.prenda.ToString() +
+                    "\r\nPrenda Cotizada : " + cotizacion.prenda.GetType().Name +
                     "\r\nCantidad prendas : " + cotizacion.cantPrendas.ToString() +
                     "\r\nResultado : " + cotizacion.resultado.ToString() +
-                    "\r\n-------------------------------";
+                    "\r\n--------------------------------------------------------------\r\n";
             }
 
             this.Controls.Add(lb);

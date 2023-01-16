@@ -23,9 +23,9 @@ namespace EvaluacionFinal_FedericoZinni
         }
 
 
-        public float Cotizar(bool camisa , bool pantalon,bool mangaCorta,bool cuelloMao,bool premium,bool chupin, float precioUnit, int cant, ref int cantStock)
+        public float Cotizar(bool camisa,bool pantalon,bool mangaCorta,bool cuelloMao,bool premium,bool chupin,float precioUni,int cant, ref int cantStock)
         {
-            float precioCoti = precioUnit;
+            float precioCoti = precioUni;
 
             if (camisa && pantalon)
             {
@@ -41,7 +41,7 @@ namespace EvaluacionFinal_FedericoZinni
 
                 cam = tienda.BuscadorPrenda(cam);
 
-                if (cant > cam.cantStock) {PopUp error = new PopUp("Error no hay tal cantidad"); return 0; }
+                if (cant > cam.cantStock) {PopUp error = new PopUp("No hay ea cantidad en Stock"); return 0; }
 
                 cantStock = cam.cantStock;
 
